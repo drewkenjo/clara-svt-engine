@@ -17,14 +17,12 @@ io-services:
 services:
   data-processing:
     chain:
-     - class: org.jlab.clara.clas12.dc.reconstruction.VDCHBEngine
-       name: DCHB
-#     - class: org.jlab.service.dc.DCTBEngine
-#       name: DCTB
+     - class: org.jlab.clara.clas12.electron.analysis.ElectronPID
+       name: EPID
   monitoring:
     chain:
-     - class: org.jlab.clara.clas12.dc.monitor.DcMonitorEngine
-       name: DCMON
+     - class: org.jlab.clara.clas12.svt.monitor.SVTMonitor
+       name: SVTMon
 
 mime-types:
   - binary/data-hipo
